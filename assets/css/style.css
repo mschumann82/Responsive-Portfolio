@@ -9,7 +9,7 @@ html {
 
 body {
     background-color: #dddddd;
-    max-width: 960px;
+    width: 960px;
     margin: auto;
     
     
@@ -37,8 +37,8 @@ body {
 
 }
 
-p {
-   
+.photo {
+   margin-right: 5px;
 }
 
 
@@ -90,6 +90,10 @@ li {
     font-size: 24px;
     
     
+    
+}
+
+p {
     
 }
 
@@ -168,7 +172,7 @@ img {
     border-bottom: solid;
     border-color: #4aaaa5;
     margin-bottom: 20px;
-
+    text-justify: center;
 }
 
 
@@ -250,9 +254,11 @@ td {
 
 
 
+
 @media all and (min-width: 980px) {
     .container {
         width: 66.67% !important;
+        
         
     }
 
@@ -267,6 +273,7 @@ td {
   @media all and (min-width: 980px) {
     .sidebar {
         width: 33.33% !important;
+        
   
     }
   
@@ -280,17 +287,75 @@ td {
 
     @media all and (max-width: 980px) {
         .container {
-            width: 100% !important;
+            width: 100%;
             height: auto;
             
         }
 
         .content{
+
             width: 50%;
         }
+
+        body {
+            width: 960px;
+        }
+
+        .outer{
+            width: 100%;
+            margin-left: 20px;
             
             
         }
+
+        .contact {
+            width: 100%;
+            margin-left: 20px;
+            
+            
+        }
+
+        .header {
+            width: 100%;
+        }
+            
+            
+        }
+
+        @media all and (max-width: 768px) {
+            .container {
+                width: 100%;
+                height: auto;
+                
+            }
+    
+            .content{
+    
+                width: 50%;
+            }
+    
+        
+    
+            .outer{
+                width: 680px;
+                margin-left: 20px;
+                
+                
+            }
+    
+            .contact {
+                width: 680px;
+                margin-left: 20px;
+                
+                
+            }
+    
+            .header {
+                width: 100%;
+            }
+                
+                
+            }
 
     
 
@@ -313,22 +378,31 @@ td {
         padding: 10px;
         
         
+        
+    }
+
+    body {
+        max-width: 640px;
     }
 
     .outer {
+       width: 500px;
+       margin-left: 20px;
         
         
     
     }
 
     .contact {
-        
+       width: 500px;
+       margin-left: 20px;
 
     }
 
     .space {
         
         margin-top: 30px;
+       
         
     }
 
@@ -377,6 +451,10 @@ td {
     .content {
         min-width: 100% !important;
         
+    }
+
+    .footer {
+        position: static;
     }
     
   
