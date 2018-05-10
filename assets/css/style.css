@@ -18,7 +18,7 @@ body {
 
 .header {
     
-    position: fixed;
+    position: absolute;
     right: 0;
     left: 0;
     top: 0;
@@ -26,6 +26,7 @@ body {
     background-color: #ffffff;
     border-color: #cccccc;
     height: auto;
+    
     
     display: flex;
     
@@ -36,7 +37,12 @@ body {
 
 }
 
-a {
+p {
+   
+}
+
+
+.nava {
     display: block;
     margin-right: 10px;
     text-decoration: none;
@@ -58,6 +64,7 @@ li {
    margin: auto;
    padding: 20px;
    font-size: 18px;
+   
    
     
     
@@ -93,10 +100,12 @@ li {
 img {
     width: 100%;
     height: auto;
-    
+    max-width: 200px;
     
     
 }
+
+
 
 .row {
     width: 100%;
@@ -106,13 +115,26 @@ img {
 .col {
     width: 100%;
     margin: auto;
+    float: left;
 }
 
 .content {
-    width: 45%;
-    
+    position: relative;
+    text-align: center;
+    max-width: 50%;
     float: left;
+    min-width: 50%;
     
+}
+
+.title {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #4aaaa5;
+    color: white;
+    padding: 20px;
 }
 
 
@@ -223,38 +245,6 @@ td {
     
 }
 
-#word-guess {
-    color: white;
-    background-color: #4aaaa5;
-    text-align: center;
-}
-
-#rpg-game {
-    color: white;
-    background-color: #4aaaa5;
-    text-align: center;
-}
-
-
-#trivia-game {
-    color: white;
-    background-color: #4aaaa5;
-    text-align: center;
-}
-
-
-#info-widget {
-    color: white;
-    background-color: #4aaaa5;
-    text-align: center;
-}
-
-
-#rock-paper {
-    color: white;
-    background-color: #4aaaa5;
-    text-align: center;
-}
 
 
 
@@ -316,8 +306,33 @@ td {
     .name {
         width: 100%;
         text-align: center;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        padding: 10px;
+        
         
     }
+
+    .outer {
+        
+        
+    
+    }
+
+    .contact {
+        
+
+    }
+
+    .space {
+        
+        margin-top: 30px;
+        
+    }
+
+    
 
     .block {
         text-align: center;
@@ -326,10 +341,11 @@ td {
         
     }
 
-    a {
+    .nava {
         
         width: 33%;
         margin: auto;
+        
     }
 
     td {
@@ -344,8 +360,7 @@ td {
     .container{
         width: 100%;
         overflow: hidden;
-        margin-left: 5px;
-        margin-right: 5px;
+        
         
         
 
@@ -357,6 +372,11 @@ td {
 
     .content {
         width: 100% !important;
+    }
+
+    .content {
+        min-width: 100% !important;
+        
     }
     
   
